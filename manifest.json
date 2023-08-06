@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Bionic Extension ",
+    "version": "1.0",
+    "description": "Changes Font style on a specific page",
+    "icons": {
+        "128": "red.png",
+        "48": "red.png",
+        "16": "red.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },
+      "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "red.png",
+          "48": "red.png",
+          "128": "red.png"
+        }
+      },
+      "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+      ],
+      "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
